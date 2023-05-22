@@ -14,14 +14,44 @@ class _UsersPageState extends State<UsersPage> {
       appBar: AppBar(
         title: Text('Users Page'),
       ),
-      body: Column(
+      body: const Column(
         children: [
           ListTile(
             title: Text('Aydar Baktybek uulu'),
             subtitle: Text('Flutter Developer'),
-            leading: Icon(Icons.chevron_right),
+            // leading: CircleAvatar(
+            //     radius: 20,
+            //     backgroundImage: NetworkImage('https://picsum.photos/200/300')),
+            leading: FlutterLogo(size: 40),
             trailing: Icon(Icons.chevron_right),
-          )
+          ),
+          ListTile(
+            title: Text('Aydar Baktybek uulu'),
+            subtitle: Text('Flutter Developer'),
+            // leading: CircleAvatar(
+            //     radius: 20,
+            //     backgroundImage: NetworkImage('https://picsum.photos/200/300')),
+            leading: FlutterLogo(size: 40),
+            trailing: Icon(Icons.chevron_right),
+          ),
+          ListTile(
+            title: Text('Aydar Baktybek uulu'),
+            subtitle: Text('Flutter Developer'),
+            // leading: CircleAvatar(
+            //     radius: 20,
+            //     backgroundImage: NetworkImage('https://picsum.photos/200/300')),
+            leading: FlutterLogo(size: 40),
+            trailing: Icon(Icons.chevron_right),
+          ),
+          ListTile(
+            title: Text('Aydar Baktybek uulu'),
+            subtitle: Text('Flutter Developer'),
+            // leading: CircleAvatar(
+            //     radius: 20,
+            //     backgroundImage: NetworkImage('https://picsum.photos/200/300')),
+            leading: FlutterLogo(size: 40),
+            trailing: Icon(Icons.chevron_right),
+          ),
         ],
       ),
     );
