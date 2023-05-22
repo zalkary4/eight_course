@@ -7,7 +7,7 @@ final List<User> users = [
   User(
     atyJonu: 'Aydar',
     kesibi: 'Flutter developer',
-    jash: 23,
+    jash: 20,
     profileSurot: 'FlutterLogo(size: 40)',
     tajryybaJolu: constText,
   ),
@@ -21,7 +21,7 @@ final List<User> users = [
   User(
     atyJonu: 'Meerim',
     kesibi: 'Flutter developer',
-    jash: 23,
+    jash: 19,
     profileSurot: 'FlutterLogo(size: 40)',
     tajryybaJolu: constText,
   ),
@@ -35,21 +35,21 @@ final List<User> users = [
   User(
     atyJonu: 'Mayrambek',
     kesibi: 'Flutter developer',
-    jash: 23,
+    jash: 43,
     profileSurot: 'FlutterLogo(size: 40)',
     tajryybaJolu: constText,
   ),
   User(
     atyJonu: 'Altynbek',
     kesibi: 'Flutter developer',
-    jash: 23,
+    jash: 32,
     profileSurot: 'FlutterLogo(size: 40)',
     tajryybaJolu: constText,
   ),
   User(
     atyJonu: 'Jamal',
     kesibi: 'Flutter developer',
-    jash: 23,
+    jash: 27,
     profileSurot: 'FlutterLogo(size: 40)',
     tajryybaJolu: constText,
   ),
@@ -85,46 +85,62 @@ class _UsersPageState extends State<UsersPage> {
       appBar: AppBar(
         title: Text('Users Page'),
       ),
-      body: const Column(
-        children: [
-          ListTile(
-            title: Text('Aydar Baktybek uulu'),
-            subtitle: Text('Flutter Developer'),
+      body: ListView.builder(
+        padding: const EdgeInsets.all(8),
+        itemBuilder: ((context, index) {
+          final user = users[index];
+          return ListTile(
+            title: Text(user.atyJonu),
+            subtitle: Text(user.kesibi + user.jash.toString() + ' jashta'),
             // leading: CircleAvatar(
             //     radius: 20,
             //     backgroundImage: NetworkImage('https://picsum.photos/200/300')),
             leading: FlutterLogo(size: 40),
             trailing: Icon(Icons.chevron_right),
-          ),
-          ListTile(
-            title: Text('Aydar Baktybek uulu'),
-            subtitle: Text('Flutter Developer'),
-            // leading: CircleAvatar(
-            //     radius: 20,
-            //     backgroundImage: NetworkImage('https://picsum.photos/200/300')),
-            leading: FlutterLogo(size: 40),
-            trailing: Icon(Icons.chevron_right),
-          ),
-          ListTile(
-            title: Text('Aydar Baktybek uulu'),
-            subtitle: Text('Flutter Developer'),
-            // leading: CircleAvatar(
-            //     radius: 20,
-            //     backgroundImage: NetworkImage('https://picsum.photos/200/300')),
-            leading: FlutterLogo(size: 40),
-            trailing: Icon(Icons.chevron_right),
-          ),
-          ListTile(
-            title: Text('Aydar Baktybek uulu'),
-            subtitle: Text('Flutter Developer'),
-            // leading: CircleAvatar(
-            //     radius: 20,
-            //     backgroundImage: NetworkImage('https://picsum.photos/200/300')),
-            leading: FlutterLogo(size: 40),
-            trailing: Icon(Icons.chevron_right),
-          ),
-        ],
+          );
+        }),
+        itemCount: users.length,
       ),
+      // body: const Column(
+      //   children: [
+      //     ListTile(
+      //       title: Text('Aydar Baktybek uulu'),
+      //       subtitle: Text('Flutter Developer'),
+      //       // leading: CircleAvatar(
+      //       //     radius: 20,
+      //       //     backgroundImage: NetworkImage('https://picsum.photos/200/300')),
+      //       leading: FlutterLogo(size: 40),
+      //       trailing: Icon(Icons.chevron_right),
+      //     ),
+      //     ListTile(
+      //       title: Text('Aydar Baktybek uulu'),
+      //       subtitle: Text('Flutter Developer'),
+      //       // leading: CircleAvatar(
+      //       //     radius: 20,
+      //       //     backgroundImage: NetworkImage('https://picsum.photos/200/300')),
+      //       leading: FlutterLogo(size: 40),
+      //       trailing: Icon(Icons.chevron_right),
+      //     ),
+      //     ListTile(
+      //       title: Text('Aydar Baktybek uulu'),
+      //       subtitle: Text('Flutter Developer'),
+      //       // leading: CircleAvatar(
+      //       //     radius: 20,
+      //       //     backgroundImage: NetworkImage('https://picsum.photos/200/300')),
+      //       leading: FlutterLogo(size: 40),
+      //       trailing: Icon(Icons.chevron_right),
+      //     ),
+      //     ListTile(
+      //       title: Text('Aydar Baktybek uulu'),
+      //       subtitle: Text('Flutter Developer'),
+      //       // leading: CircleAvatar(
+      //       //     radius: 20,
+      //       //     backgroundImage: NetworkImage('https://picsum.photos/200/300')),
+      //       leading: FlutterLogo(size: 40),
+      //       trailing: Icon(Icons.chevron_right),
+      //     ),
+      //   ],
+      // ),
     );
   }
 }
