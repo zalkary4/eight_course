@@ -10,6 +10,18 @@ class UsersPage extends StatefulWidget {
 class _UsersPageState extends State<UsersPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Users Page'),
+      ),
+      body: Column(
+        children: [
+          ListTile(
+            title: Text('Aydar Baktybek uulu'),
+            subtitle: Text('Flutter Developer'),
+          )
+        ],
+      ),
+    );
   }
 }
