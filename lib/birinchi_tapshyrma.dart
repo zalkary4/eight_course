@@ -58,6 +58,7 @@ class _BirinchiTapshyrmaCounterPageState
                   onPressed: koshuu,
                   child: const Icon(Icons.add),
                 ),
+                const SizedBox(width: 45),
                 ElevatedButton(
                   onPressed: kemituu,
                   child: const Icon(Icons.remove),
