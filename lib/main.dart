@@ -1,4 +1,4 @@
-import 'package:eight_course/birinchi_tapshyrma.dart';
+import 'package:eight_course/2_lesson_user_page/user_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       //   useMaterial3: true,
       // ),
-      home: BirinchiTapshyrmaCounterPage(title: 'Flutter Demo Home Page'),
+      home: UserPage(),
     );
   }
 }
