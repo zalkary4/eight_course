@@ -2,6 +2,22 @@ import 'package:flutter/material.dart';
 
 final List users = [];
 
+class User {
+  final String atyJonu;
+  final String kesibi;
+  final int jash;
+  final String profileSurot;
+  final String tajryybaJolu;
+
+  User({
+    required this.atyJonu,
+    required this.kesibi,
+    required this.jash,
+    required this.profileSurot,
+    required this.tajryybaJolu,
+  });
+}
+
 class UsersPage extends StatefulWidget {
   const UsersPage({Key? key}) : super(key: key);
 
