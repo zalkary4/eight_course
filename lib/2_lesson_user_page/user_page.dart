@@ -19,6 +19,62 @@ final List<User> users = [
     tajryybaJolu: constText,
   ),
   User(
+    atyJonu: 'Aydar',
+    kesibi: 'Flutter developer',
+    jash: 20,
+    profileSurot: 'FlutterLogo(size: 40)',
+    tajryybaJolu: constText,
+  ),
+  User(
+    atyJonu: 'Adilbek',
+    kesibi: 'Flutter developer',
+    jash: 23,
+    profileSurot: 'FlutterLogo(size: 40)',
+    tajryybaJolu: constText,
+  ),
+  User(
+    atyJonu: 'Aydar',
+    kesibi: 'Flutter developer',
+    jash: 20,
+    profileSurot: 'FlutterLogo(size: 40)',
+    tajryybaJolu: constText,
+  ),
+  User(
+    atyJonu: 'Adilbek',
+    kesibi: 'Flutter developer',
+    jash: 23,
+    profileSurot: 'FlutterLogo(size: 40)',
+    tajryybaJolu: constText,
+  ),
+  User(
+    atyJonu: 'Aydar',
+    kesibi: 'Flutter developer',
+    jash: 20,
+    profileSurot: 'FlutterLogo(size: 40)',
+    tajryybaJolu: constText,
+  ),
+  User(
+    atyJonu: 'Adilbek',
+    kesibi: 'Flutter developer',
+    jash: 23,
+    profileSurot: 'FlutterLogo(size: 40)',
+    tajryybaJolu: constText,
+  ),
+  User(
+    atyJonu: 'Aydar',
+    kesibi: 'Flutter developer',
+    jash: 20,
+    profileSurot: 'FlutterLogo(size: 40)',
+    tajryybaJolu: constText,
+  ),
+  User(
+    atyJonu: 'Adilbek',
+    kesibi: 'Flutter developer',
+    jash: 23,
+    profileSurot: 'FlutterLogo(size: 40)',
+    tajryybaJolu: constText,
+  ),
+  User(
     atyJonu: 'Meerim',
     kesibi: 'Flutter developer',
     jash: 19,
@@ -91,7 +147,7 @@ class _UsersPageState extends State<UsersPage> {
           final user = users[index];
           return ListTile(
             title: Text(user.atyJonu),
-            subtitle: Text(user.kesibi + user.jash.toString() + ' jashta'),
+            subtitle: Text('${user.kesibi} ${user.jash} jashta'),
             // leading: CircleAvatar(
             //     radius: 20,
             //     backgroundImage: NetworkImage('https://picsum.photos/200/300')),
