@@ -19,6 +19,8 @@ class _UsersPageState extends State<UsersPage> {
           ListTile(
             title: Text('Aydar Baktybek uulu'),
             subtitle: Text('Flutter Developer'),
+            leading: Icon(Icons.chevron_right),
+            trailing: Icon(Icons.chevron_right),
           )
         ],
       ),
