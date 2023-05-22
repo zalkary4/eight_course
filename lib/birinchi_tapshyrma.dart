@@ -18,12 +18,14 @@ class _BirinchiTapshyrmaCounterPageState
     setState(() {
       _counter++;
     });
+    print(_counter);
   }
 
   void kemituu() {
     setState(() {
       _counter--;
     });
+    print(_counter);
   }
 
   @override
