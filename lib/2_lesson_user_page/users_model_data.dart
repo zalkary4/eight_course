@@ -107,6 +107,13 @@ final List<User> users = [
     profileSurot: 'FlutterLogo(size: 40)',
     tajryybaJolu: constText,
   ),
+  User(
+    atyJonu: 'Jamal',
+    kesibi: 'Flutter developer',
+    jash: 27,
+    profileSurot: 'FlutterLogo(size: 40)',
+    tajryybaJolu: constText,
+  ),
 ];
 
 class User {
