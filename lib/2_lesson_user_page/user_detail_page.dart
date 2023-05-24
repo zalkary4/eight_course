@@ -15,12 +15,12 @@ class UserDetailPage extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          const CircleAvatar(
+          CircleAvatar(
             radius: 50,
-            backgroundImage: NetworkImage(''),
+            backgroundImage: NetworkImage(user.profileSurot),
           ),
           Text(
-            'Whale',
+            user.atyJonu,
             style: TextStyle(
               fontSize: 30,
               color: Colors.deepPurple,
@@ -28,8 +28,7 @@ class UserDetailPage extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.all(10.0),
-            child: Text(
-                'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'),
+            child: Text(user.kesibi),
           ),
         ],
       ),
