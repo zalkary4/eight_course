@@ -7,9 +7,14 @@ class CounterPageLesson9 extends StatefulWidget {
   _CounterPageLesson9State createState() => _CounterPageLesson9State();
 }
 
-int san = 0;
-
 class _CounterPageLesson9State extends State<CounterPageLesson9> {
+  int san = 0;
+  void koshuu() {
+    san++;
+    setState(() {});
+    print(san);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,15 +27,15 @@ class _CounterPageLesson9State extends State<CounterPageLesson9> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               ElevatedButton(
-                onPressed: () {},
-                child: const Icon(Icons.add),
+                onPressed: koshuu,
+                child: Icon(Icons.add),
               ),
               ElevatedButton(
                 onPressed: () {},
                 child: const Icon(Icons.remove),
               ),
             ],
-          )
+          ),
         ],
       ),
     );
