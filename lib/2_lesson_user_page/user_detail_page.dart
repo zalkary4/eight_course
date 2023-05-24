@@ -7,7 +7,7 @@ class UserDetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(user.atyJonu);
+    // print(user.atyJonu);
     return Scaffold(
       appBar: AppBar(
         title: Text(user.atyJonu),
@@ -27,7 +27,8 @@ class UserDetailPage extends StatelessWidget {
             ),
           ),
           Text(
-            user.jash.toString(),
+            '${user.jash}',
+            // user.jash.toString(),
             style: TextStyle(
               fontSize: 30,
               color: Colors.deepPurple,
@@ -35,7 +36,7 @@ class UserDetailPage extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.all(10.0),
-            child: Text(user.kesibi),
+            child: Text(user.tajryybaJolu),
           ),
         ],
       ),
