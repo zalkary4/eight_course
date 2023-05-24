@@ -1,3 +1,4 @@
+import 'package:eight_course/5_lesson_counter_page/secon_counter_page.dart';
 import 'package:flutter/material.dart';
 
 class CounterPageLesson9 extends StatefulWidget {
@@ -47,30 +48,11 @@ class _CounterPageLesson9State extends State<CounterPageLesson9> {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => CounterPageLesson99(),
+              builder: (context) => CounterPageLesson99(san: san),
             ),
           );
         },
         child: Icon(Icons.add),
-      ),
-    );
-  }
-}
-
-class CounterPageLesson99 extends StatefulWidget {
-  const CounterPageLesson99({Key? key}) : super(key: key);
-
-  @override
-  _CounterPageLesson99State createState() => _CounterPageLesson99State();
-}
-
-class _CounterPageLesson99State extends State<CounterPageLesson99> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Counter 2')),
-      body: Center(
-        child: Text('0', style: TextStyle(fontSize: 70)),
       ),
     );
   }
