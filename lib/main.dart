@@ -1,3 +1,4 @@
+import 'package:eight_course/10_lesson_f7/login_page.dart';
 import 'package:eight_course/2_lesson_user_page/user_page.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(primarySwatch: Colors.purple),
-      home: const CounterPageLesson9(),
+      home: const LoginPage(),
     );
   }
 }
