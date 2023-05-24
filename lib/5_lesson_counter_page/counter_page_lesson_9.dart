@@ -31,7 +31,11 @@ class _CounterPageLesson9State extends State<CounterPageLesson9> {
                 child: Icon(Icons.add),
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  san--;
+                  print(san);
+                  setState(() {});
+                },
                 child: const Icon(Icons.remove),
               ),
             ],
