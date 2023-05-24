@@ -10,7 +10,7 @@ class UserDetailPage extends StatelessWidget {
     print(user.atyJonu);
     return Scaffold(
       appBar: AppBar(
-        title: Text('User Detail Page'),
+        title: Text(user.atyJonu),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -20,7 +20,14 @@ class UserDetailPage extends StatelessWidget {
             backgroundImage: NetworkImage(user.profileSurot),
           ),
           Text(
-            user.atyJonu,
+            user.kesibi,
+            style: TextStyle(
+              fontSize: 30,
+              color: Colors.deepPurple,
+            ),
+          ),
+          Text(
+            user.jash.toString(),
             style: TextStyle(
               fontSize: 30,
               color: Colors.deepPurple,
