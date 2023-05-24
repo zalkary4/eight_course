@@ -68,8 +68,9 @@ class _CounterPageLesson99State extends State<CounterPageLesson99> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Counter 2'),
+      appBar: AppBar(title: const Text('Counter 2')),
+      body: Center(
+        child: Text('0', style: TextStyle(fontSize: 70)),
       ),
     );
   }
