@@ -1,7 +1,9 @@
+import 'package:eight_course/2_lesson_user_page/user_page.dart';
 import 'package:flutter/material.dart';
 
 class UserDetailPage extends StatelessWidget {
-  const UserDetailPage({Key? key}) : super(key: key);
+  const UserDetailPage({Key? key, required this.user}) : super(key: key);
+  final User user;
 
   @override
   Widget build(BuildContext context) {

@@ -1,3 +1,5 @@
+import 'package:eight_course/2_lesson_user_page/user_model.dart';
+
 const String constText =
     'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.';
 
@@ -122,19 +124,3 @@ final List<User> users = [
     tajryybaJolu: constText,
   ),
 ];
-
-class User {
-  final String atyJonu;
-  final String kesibi;
-  final int jash;
-  final String profileSurot;
-  final String tajryybaJolu;
-
-  User({
-    required this.atyJonu,
-    required this.kesibi,
-    required this.jash,
-    required this.profileSurot,
-    required this.tajryybaJolu,
-  });
-}

@@ -25,9 +25,9 @@ class _UsersPageState extends State<UsersPage> {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) {
-                  return UserDetailPage();
-                }),
+                MaterialPageRoute(
+                  builder: (context) => UserDetailPage(user: users),
+                ),
               );
             },
             title: Text(user.atyJonu),
