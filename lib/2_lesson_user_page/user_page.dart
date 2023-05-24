@@ -1,3 +1,4 @@
+import 'package:eight_course/2_lesson_user_page/user_detail_page.dart';
 import 'package:eight_course/2_lesson_user_page/users_model_data.dart';
 import 'package:flutter/material.dart';
 
@@ -20,6 +21,15 @@ class _UsersPageState extends State<UsersPage> {
         itemBuilder: ((context, index) {
           final user = users[index];
           return ListTile(
+            /// onTap(){}=anonym function
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) {
+                  return UserDetailPage();
+                }),
+              );
+            },
             title: Text(user.atyJonu),
             subtitle: Text('${user.kesibi} ${user.jash} jashta'),
             // leading: CircleAvatar(
