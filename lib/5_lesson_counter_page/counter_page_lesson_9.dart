@@ -42,6 +42,35 @@ class _CounterPageLesson9State extends State<CounterPageLesson9> {
           ),
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => CounterPageLesson99(),
+            ),
+          );
+        },
+        child: Icon(Icons.add),
+      ),
+    );
+  }
+}
+
+class CounterPageLesson99 extends StatefulWidget {
+  const CounterPageLesson99({Key? key}) : super(key: key);
+
+  @override
+  _CounterPageLesson99State createState() => _CounterPageLesson99State();
+}
+
+class _CounterPageLesson99State extends State<CounterPageLesson99> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Counter 2'),
+      ),
     );
   }
 }
