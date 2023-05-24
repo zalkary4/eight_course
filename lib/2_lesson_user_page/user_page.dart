@@ -26,7 +26,7 @@ class _UsersPageState extends State<UsersPage> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => UserDetailPage(user: users),
+                  builder: (context) => UserDetailPage(user: user),
                 ),
               );
             },

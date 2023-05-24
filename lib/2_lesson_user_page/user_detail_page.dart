@@ -1,4 +1,4 @@
-import 'package:eight_course/2_lesson_user_page/user_page.dart';
+import 'package:eight_course/2_lesson_user_page/user_model.dart';
 import 'package:flutter/material.dart';
 
 class UserDetailPage extends StatelessWidget {
@@ -7,6 +7,7 @@ class UserDetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(user.atyJonu);
     return Scaffold(
       appBar: AppBar(
         title: Text('User Detail Page'),
