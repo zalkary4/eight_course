@@ -43,6 +43,9 @@ class LoginPage extends StatelessWidget {
               onPressed: () {},
               child: Text('Input'),
             ),
+            FlutterLogo(
+              size: 60,
+            )
           ],
         ),
       ),
