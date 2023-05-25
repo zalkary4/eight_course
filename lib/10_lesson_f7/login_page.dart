@@ -1,3 +1,4 @@
+import 'package:eight_course/10_lesson_f7/home_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -44,7 +45,13 @@ class LoginPage extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 if (login == 'eagle@gmail.com' && password == 'kurs8') {
-                  print('Tuura');
+                  // print('Tuura');
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => HomePage(),
+                    ),
+                  );
                 } else {
                   print('Kata');
                 }
