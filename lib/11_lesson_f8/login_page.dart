@@ -6,13 +6,14 @@ class LoginPageF8 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 66, 98, 67),
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: const Text('Тапшырма - 04',
             style: TextStyle(color: Colors.black, fontWeight: FontWeight.w800)),
         centerTitle: true,
       ),
-      body: const ColoredBox(color: Colors.green),
+      body: Column(),
     );
   }
 }
