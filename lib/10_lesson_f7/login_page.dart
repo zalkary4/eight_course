@@ -16,11 +16,12 @@ class LoginPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: TextField(
-                onChanged: (val) {
-                  login = val;
-                  print(val);
+                onChanged: (log) {
+                  login = log;
+                  // print(login);
+                  // print(password);
                 },
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Login',
                 ),
@@ -29,11 +30,12 @@ class LoginPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: TextField(
-                onChanged: (log) {
-                  password = log;
-                  print(log);
+                onChanged: (pass) {
+                  password = pass;
+                  // print(login);
+                  // print(password);
                 },
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Password',
                 ),
