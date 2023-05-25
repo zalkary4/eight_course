@@ -42,7 +42,13 @@ class LoginPage extends StatelessWidget {
               ),
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                if (login == 'eagle@gmail.com' && password == 'kurs8') {
+                  print('Tuura');
+                } else {
+                  print('Kata');
+                }
+              },
               child: Text('Input'),
             ),
             FlutterLogo(
