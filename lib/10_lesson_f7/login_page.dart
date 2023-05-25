@@ -53,14 +53,16 @@ class LoginPage extends StatelessWidget {
                     ),
                   );
                 } else {
-                  print('Kata');
+                  // print('Kata');
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('Login tuura emes'),
+                    ),
+                  );
                 }
               },
               child: Text('Input'),
             ),
-            FlutterLogo(
-              size: 60,
-            )
           ],
         ),
       ),
