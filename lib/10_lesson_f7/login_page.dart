@@ -61,7 +61,7 @@ class LoginPage extends StatelessWidget {
                   );
                 }
               },
-              child: Text('Input'),
+              child: const Text('Input'),
             ),
           ],
         ),
