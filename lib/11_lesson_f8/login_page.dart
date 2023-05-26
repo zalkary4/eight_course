@@ -16,20 +16,18 @@ class LoginPageF8 extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          SizedBox(height: 30),
           CircleAvatar(
             radius: 100,
             backgroundImage: AssetImage('assets/images/yondu.jpg'),
-            // child: Image.asset(
-            //   'assets/images/yondu.jpg',
-            //   height: 120,
-            //   width: 90,
-            // ),
           ),
           SizedBox(height: 30),
-          Image.asset(
-            'assets/images/yondu.jpg',
-            height: 70,
-            width: 50,
+          ClipOval(
+            child: Image.asset(
+              'assets/images/yondu.jpg',
+              // height: 100,
+              width: 80,
+            ),
           ),
           SizedBox(height: 30),
           TextField(),
