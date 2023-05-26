@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LoginPageF8 extends StatelessWidget {
   const LoginPageF8({Key? key}) : super(key: key);
@@ -18,18 +19,13 @@ class LoginPageF8 extends StatelessWidget {
         children: [
           SizedBox(height: 30),
           CircleAvatar(
-            radius: 100,
-            backgroundImage: AssetImage('assets/images/yondu.jpg'),
-          ),
+              radius: 60,
+              backgroundImage: AssetImage('assets/images/yondu.jpg')),
           SizedBox(height: 30),
-          ClipOval(
-            child: Image.asset(
-              'assets/images/yondu.jpg',
-              // height: 100,
-              width: 80,
-            ),
+          Text(
+            'Yondu Udonta',
+            style: TextStyle(color: Colors.white, fontSize: 40),
           ),
-          SizedBox(height: 30),
           TextField(),
         ],
       ),
