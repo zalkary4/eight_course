@@ -13,7 +13,28 @@ class LoginPageF8 extends StatelessWidget {
             style: TextStyle(color: Colors.black, fontWeight: FontWeight.w800)),
         centerTitle: true,
       ),
-      body: Column(),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          CircleAvatar(
+            radius: 100,
+            backgroundImage: AssetImage('assets/images/yondu.jpg'),
+            // child: Image.asset(
+            //   'assets/images/yondu.jpg',
+            //   height: 120,
+            //   width: 90,
+            // ),
+          ),
+          SizedBox(height: 30),
+          Image.asset(
+            'assets/images/yondu.jpg',
+            height: 70,
+            width: 50,
+          ),
+          SizedBox(height: 30),
+          TextField(),
+        ],
+      ),
     );
   }
 }
