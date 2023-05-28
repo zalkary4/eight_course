@@ -42,7 +42,7 @@ class LoginPageF8 extends StatelessWidget {
             indent: 185,
             endIndent: 185,
           ),
-          SizedBox(height: 30),
+          SizedBox(height: 10),
           SizedBox(
             height: 50,
             child: TextFormField(
@@ -55,7 +55,30 @@ class LoginPageF8 extends StatelessWidget {
                 prefixIcon: Icon(
                   Icons.phone,
                   color: Color.fromARGB(255, 66, 98, 67),
+                  size: 25,
                 ),
+                isDense: true,
+                filled: true,
+                fillColor: Colors.white,
+              ),
+            ),
+          ),
+          SizedBox(height: 10),
+          SizedBox(
+            height: 50,
+            child: TextFormField(
+              initialValue: "example@gmail.com",
+              style: TextStyle(
+                color: Color.fromARGB(255, 66, 98, 67),
+                fontSize: 20,
+              ),
+              decoration: const InputDecoration(
+                prefixIcon: Icon(
+                  Icons.mail,
+                  color: Color.fromARGB(255, 66, 98, 67),
+                  size: 25,
+                ),
+                isDense: true,
                 filled: true,
                 fillColor: Colors.white,
               ),
