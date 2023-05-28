@@ -24,7 +24,10 @@ class LoginPageF8 extends StatelessWidget {
           SizedBox(height: 30),
           Text(
             'Yondu Udonta',
-            style: TextStyle(color: Colors.white, fontSize: 30),
+            style: GoogleFonts.pacifico(
+              color: Colors.white,
+              fontSize: 30,
+            ),
           ),
           TextField(),
         ],
