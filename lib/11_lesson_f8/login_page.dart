@@ -43,14 +43,18 @@ class LoginPageF8 extends StatelessWidget {
             endIndent: 185,
           ),
           SizedBox(height: 30),
-          TextField(
-            decoration: InputDecoration(
-              prefixIcon: Icon(
-                Icons.phone,
-                color: Color.fromARGB(255, 66, 98, 67),
+          SizedBox(
+            height: 50,
+            child: TextFormField(
+              initialValue: "+996 777 111 222",
+              decoration: const InputDecoration(
+                prefixIcon: Icon(
+                  Icons.phone,
+                  color: Color.fromARGB(255, 66, 98, 67),
+                ),
+                filled: true,
+                fillColor: Colors.white,
               ),
-              filled: true,
-              fillColor: Colors.white,
             ),
           ),
         ],
