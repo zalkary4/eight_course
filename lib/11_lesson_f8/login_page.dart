@@ -42,7 +42,13 @@ class LoginPageF8 extends StatelessWidget {
             indent: 185,
             endIndent: 185,
           ),
-          TextField(),
+          SizedBox(height: 30),
+          TextField(
+            decoration: InputDecoration(
+              filled: true,
+              fillColor: Colors.white,
+            ),
+          ),
         ],
       ),
     );
