@@ -36,12 +36,11 @@ class LoginPageF8 extends StatelessWidget {
                 fontSize: 20,
                 fontWeight: FontWeight.w400),
           ),
-          Divider(
-            // height: 40,
+          const Divider(
             thickness: 1,
-            color: Colors.amberAccent,
-            indent: 140,
-            endIndent: 140,
+            color: Color.fromARGB(255, 197, 212, 205),
+            indent: 185,
+            endIndent: 185,
           ),
           TextField(),
         ],
