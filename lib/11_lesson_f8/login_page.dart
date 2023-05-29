@@ -46,7 +46,7 @@ class LoginPageF8 extends StatelessWidget {
           SizedBox(
             height: 50,
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 14),
+              padding: const EdgeInsets.symmetric(horizontal: 10),
               child: TextFormField(
                 initialValue: "+996 777 111 222",
                 style: TextStyle(
@@ -70,7 +70,7 @@ class LoginPageF8 extends StatelessWidget {
           SizedBox(
             height: 50,
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 14),
+              padding: const EdgeInsets.symmetric(horizontal: 10),
               child: TextFormField(
                 initialValue: "example@gmail.com",
                 style: TextStyle(
