@@ -45,49 +45,55 @@ class LoginPageF8 extends StatelessWidget {
           SizedBox(height: 10),
           SizedBox(
             height: 50,
-            child: TextFormField(
-              initialValue: "+996 777 111 222",
-              style: TextStyle(
-                color: Color.fromARGB(255, 66, 98, 67),
-                fontSize: 20,
-              ),
-              decoration: const InputDecoration(
-                prefixIcon: Icon(
-                  Icons.phone,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 14),
+              child: TextFormField(
+                initialValue: "+996 777 111 222",
+                style: TextStyle(
                   color: Color.fromARGB(255, 66, 98, 67),
-                  size: 25,
+                  fontSize: 20,
                 ),
-                isDense: true,
-                filled: true,
-                fillColor: Colors.white,
+                decoration: const InputDecoration(
+                  prefixIcon: Icon(
+                    Icons.phone,
+                    color: Color.fromARGB(255, 66, 98, 67),
+                    size: 25,
+                  ),
+                  isDense: true,
+                  filled: true,
+                  fillColor: Colors.white,
+                ),
               ),
             ),
           ),
           SizedBox(height: 10),
           SizedBox(
             height: 50,
-            child: TextFormField(
-              initialValue: "example@gmail.com",
-              style: TextStyle(
-                color: Color.fromARGB(255, 66, 98, 67),
-                fontSize: 20,
-              ),
-              decoration: const InputDecoration(
-                prefixIcon: Icon(
-                  Icons.mail,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 14),
+              child: TextFormField(
+                initialValue: "example@gmail.com",
+                style: TextStyle(
                   color: Color.fromARGB(255, 66, 98, 67),
-                  size: 25,
+                  fontSize: 20,
                 ),
-                isDense: true,
-                filled: true,
-                fillColor: Colors.white,
+                decoration: const InputDecoration(
+                  prefixIcon: Icon(
+                    Icons.mail,
+                    color: Color.fromARGB(255, 66, 98, 67),
+                    size: 25,
+                  ),
+                  isDense: true,
+                  filled: true,
+                  fillColor: Colors.white,
+                ),
               ),
             ),
           ),
           const SizedBox(height: 10),
           OutlinedButton(
             onPressed: () {},
-            child: Text(
+            child: const Text(
               'Sign In',
               style: TextStyle(fontSize: 24, color: Colors.white),
             ),
