@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class LoginPageF8 extends StatelessWidget {
-  const LoginPageF8({Key? key}) : super(key: key);
+class LoginPageF9 extends StatelessWidget {
+  const LoginPageF9({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

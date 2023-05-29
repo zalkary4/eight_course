@@ -1,7 +1,5 @@
-import 'package:eight_course/10_lesson_f7/login_page.dart';
 import 'package:flutter/material.dart';
-
-import '11_lesson_f8/app.dart';
+import '12_lesson_f9/app.dart';
 
 void main() {
   runApp(const MyApp());
