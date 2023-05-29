@@ -23,6 +23,14 @@ class LoginPageF9 extends StatelessWidget {
               CircleAvatar(
                   radius: 60,
                   backgroundImage: AssetImage('assets/images/yondu.jpg')),
+              // ClipRRect(
+              //   child: Image.asset(
+              //     'assets/images/yondu.jpg',
+              //     height: 70,
+              //     width: 70,
+              //   ),
+              //   borderRadius: BorderRadius.circular(50),
+              // ),
               SizedBox(height: 30),
               Text(
                 'Yondu Udonta',
