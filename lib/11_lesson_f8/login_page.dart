@@ -87,13 +87,14 @@ class LoginPageF8 extends StatelessWidget {
           const SizedBox(height: 10),
           OutlinedButton(
             onPressed: () {},
-            child: Text('Sign IN'),
+            child: Text('Sign In'),
             style: OutlinedButton.styleFrom(
-                side: BorderSide(
-              width: 5.0,
-              color: Colors.blue,
-              style: BorderStyle.solid,
-            )),
+              side: BorderSide(
+                width: 1.0,
+                color: Colors.white,
+                style: BorderStyle.solid,
+              ),
+            ),
           ),
         ],
       ),
