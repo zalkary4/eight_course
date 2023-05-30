@@ -26,6 +26,7 @@ class HomePageF9 extends StatelessWidget {
           children: [
             Text('I\'m Rich'),
             Text('I\'m Rich'),
+            Image.asset('assets/icons/diamond.svg'),
           ],
         ),
       ),
