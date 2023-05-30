@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class HomePageF9 extends StatelessWidget {
   const HomePageF9({Key? key}) : super(key: key);
@@ -26,7 +27,8 @@ class HomePageF9 extends StatelessWidget {
           children: [
             Text('I\'m Rich'),
             Text('I\'m Rich'),
-            Image.asset('assets/icons/diamond.svg'),
+            SvgPicture.asset('assets/icons/diamond.png'),
+            // SvgPisture.asset('assets/icons/diamond.png'),
           ],
         ),
       ),
