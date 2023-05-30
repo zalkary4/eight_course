@@ -27,7 +27,21 @@ class HomePageF9 extends StatelessWidget {
           children: [
             Column(
               children: [
-                Text('I\'m Rich'),
+                Text(
+                  'I\'m Rich',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 35,
+                  ),
+                ),
+                Text(
+                  'I\'m Rich',
+                  style: TextStyle(
+                    color: Colors.red,
+                    fontSize: 35,
+                    fontWeight: FontWeight.w200,
+                  ),
+                ),
               ],
             ),
             SvgPicture.asset(
