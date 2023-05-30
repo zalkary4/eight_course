@@ -25,20 +25,15 @@ class HomePageF9 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Expanded(
-              child: Column(
-                children: [
-                  Text('I\'m Rich'),
-                  Text('I\'m Rich'),
-                ],
-              ),
+            Column(
+              children: [
+                Text('I\'m Rich'),
+              ],
             ),
-            Expanded(
-              child: SvgPicture.asset(
-                'assets/icons/diamond.svg',
-                width: 100,
-                height: 100,
-              ),
+            SvgPicture.asset(
+              'assets/icons/diamond.svg',
+              width: 100,
+              height: 100,
             ),
           ],
         ),
