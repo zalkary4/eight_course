@@ -30,9 +30,10 @@ class HomePageF9 extends StatelessWidget {
               children: [
                 Text(
                   'I\'m Rich',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 35,
+                  style: GoogleFonts.sofia(
+                    color: Colors.red,
+                    fontSize: 48,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
                 Text(
