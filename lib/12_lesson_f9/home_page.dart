@@ -34,6 +34,7 @@ class HomePageF9 extends StatelessWidget {
                     color: Colors.red,
                     fontSize: 48,
                     fontWeight: FontWeight.w400,
+                    // height: 1.0
                   ),
                 ),
                 Text(
