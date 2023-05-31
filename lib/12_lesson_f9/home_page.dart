@@ -11,12 +11,16 @@ class HomePageF9 extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xffFEC106),
       appBar: AppBar(
+        bottom: PreferredSize(
+          child: Container(color: Colors.redAccent, height: 2.0),
+          preferredSize: const Size.fromHeight(4.0),
+        ),
         systemOverlayStyle: SystemUiOverlayStyle.light
             .copyWith(statusBarColor: Color(0xff751e85)),
         centerTitle: true,
         shadowColor: Colors.black,
         elevation: 25.0,
-        backgroundColor: Color(0xffFEC106),
+        backgroundColor: const Color(0xffFEC106),
         title: const Text(
           'Home work - 4',
           style: TextStyle(
