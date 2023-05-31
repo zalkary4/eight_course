@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class LoginPageF9 extends StatelessWidget {
-  const LoginPageF9({Key? key}) : super(key: key);
+class LoginPageF10 extends StatelessWidget {
+  const LoginPageF10({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,8 +19,8 @@ class LoginPageF9 extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(height: 30),
-              CircleAvatar(
+              const SizedBox(height: 30),
+              const CircleAvatar(
                   radius: 60,
                   backgroundImage: AssetImage('assets/images/yondu.jpg')),
               // ClipRRect(
@@ -31,7 +31,7 @@ class LoginPageF9 extends StatelessWidget {
               //   ),
               //   borderRadius: BorderRadius.circular(50),
               // ),
-              SizedBox(height: 30),
+              const SizedBox(height: 30),
               Text(
                 'Yondu Udonta',
                 style: GoogleFonts.pacifico(
@@ -42,7 +42,7 @@ class LoginPageF9 extends StatelessWidget {
               Text(
                 'Flutter DEVELOPER',
                 style: GoogleFonts.dosis(
-                    color: Color.fromARGB(255, 197, 212, 205),
+                    color: const Color.fromARGB(255, 197, 212, 205),
                     fontSize: 20,
                     fontWeight: FontWeight.w400),
               ),
@@ -52,14 +52,14 @@ class LoginPageF9 extends StatelessWidget {
                 indent: 185,
                 endIndent: 185,
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               SizedBox(
                 height: 50,
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: TextFormField(
                     initialValue: "+996 777 111 222",
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Color.fromARGB(255, 66, 98, 67),
                       fontSize: 20,
                     ),
@@ -83,7 +83,7 @@ class LoginPageF9 extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: TextFormField(
                     initialValue: "example@gmail.com",
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Color.fromARGB(255, 66, 98, 67),
                       fontSize: 20,
                     ),
