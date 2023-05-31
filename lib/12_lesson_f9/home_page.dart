@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomePageF9 extends StatelessWidget {
   const HomePageF9({Key? key}) : super(key: key);
@@ -36,7 +37,7 @@ class HomePageF9 extends StatelessWidget {
                 ),
                 Text(
                   'I\'m Rich',
-                  style: TextStyle(
+                  style: GoogleFonts.sofia(
                     color: Colors.red,
                     fontSize: 35,
                     fontWeight: FontWeight.w200,
