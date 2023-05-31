@@ -3,6 +3,7 @@ import '12_lesson_f9/app.dart';
 
 void main() {
   runApp(const MyApp());
+  debugPrint('print');
 }
 
 // class MyApp extends StatelessWidget {
