@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -10,6 +11,8 @@ class HomePageF9 extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xffFEC106),
       appBar: AppBar(
+        systemOverlayStyle: SystemUiOverlayStyle.light
+            .copyWith(statusBarColor: Color(0xff751e85)),
         centerTitle: true,
         shadowColor: Colors.black,
         elevation: 25.0,
