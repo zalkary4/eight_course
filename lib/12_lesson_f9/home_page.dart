@@ -39,8 +39,8 @@ class HomePageF9 extends StatelessWidget {
                   'I\'m Rich',
                   style: GoogleFonts.sofia(
                     color: Colors.red,
-                    fontSize: 35,
-                    fontWeight: FontWeight.w200,
+                    fontSize: 48,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
               ],
