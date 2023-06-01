@@ -59,8 +59,7 @@ class _LoginPageF10State extends State<LoginPageF10> {
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: TextFormField(
                     onChanged: (String? phone) {
-                      print('onChanged $phone');
-                      print(_phone);
+                      phone = _phone;
                     },
                     style: const TextStyle(
                       color: Color.fromARGB(255, 66, 98, 67),
@@ -89,8 +88,7 @@ class _LoginPageF10State extends State<LoginPageF10> {
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: TextFormField(
                     onChanged: (String? email) {
-                      print('onChanged $email');
-                      print(_email);
+                      email = _email;
                     },
                     style: const TextStyle(
                       color: Color.fromARGB(255, 66, 98, 67),
