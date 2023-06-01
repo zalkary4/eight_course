@@ -9,9 +9,15 @@ class LoginPageF10 extends StatefulWidget {
 }
 
 class _LoginPageF10State extends State<LoginPageF10> {
-  bool _disable = true;
+  bool isActive = true;
   String? _email;
   String? _phone;
+  void activate() {
+    if (_phone != null && _email != null) {
+      isActive = true;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
