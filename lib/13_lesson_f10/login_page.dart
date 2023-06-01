@@ -68,7 +68,7 @@ class _LoginPageF10State extends State<LoginPageF10> {
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: TextFormField(
                     onChanged: (String? phone) {
-                      phone = _phone;
+                      _phone = phone;
                       activateRRR();
                     },
                     style: const TextStyle(
@@ -98,7 +98,7 @@ class _LoginPageF10State extends State<LoginPageF10> {
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: TextFormField(
                     onChanged: (String? email) {
-                      email = _email;
+                      _email = email;
                       activateRRR();
                     },
                     style: const TextStyle(
@@ -126,7 +126,7 @@ class _LoginPageF10State extends State<LoginPageF10> {
                   'Sign In',
                   style: TextStyle(fontSize: 24, color: Colors.white),
                 ),
-                style: OutlinedButton.styleFrom(
+                style: ElevatedButton.styleFrom(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
                   side: const BorderSide(
