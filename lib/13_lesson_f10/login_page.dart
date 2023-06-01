@@ -23,14 +23,6 @@ class LoginPageF10 extends StatelessWidget {
               const CircleAvatar(
                   radius: 60,
                   backgroundImage: AssetImage('assets/images/yondu.jpg')),
-              // ClipRRect(
-              //   child: Image.asset(
-              //     'assets/images/yondu.jpg',
-              //     height: 70,
-              //     width: 70,
-              //   ),
-              //   borderRadius: BorderRadius.circular(50),
-              // ),
               const SizedBox(height: 30),
               Text(
                 'Yondu Udonta',
@@ -77,7 +69,7 @@ class LoginPageF10 extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               SizedBox(
                 height: 50,
                 child: Padding(
@@ -105,7 +97,7 @@ class LoginPageF10 extends StatelessWidget {
               const SizedBox(height: 10),
               OutlinedButton(
                 onPressed: () {},
-                child: const Text(
+                child: Text(
                   'Sign In',
                   style: TextStyle(fontSize: 24, color: Colors.white),
                 ),
