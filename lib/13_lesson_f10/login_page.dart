@@ -15,7 +15,9 @@ class _LoginPageF10State extends State<LoginPageF10> {
   String? _phone;
   void activateRRR() {
     if (_phone != null && _email != null) {
-      isActive = true;
+      if (_phone!.isEmpty || _email!.isEmpty) {
+        isActive = true;
+      }
     } else {
       isActive = false;
     }
