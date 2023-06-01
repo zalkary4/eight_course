@@ -9,9 +9,9 @@ class LoginPageF10 extends StatefulWidget {
 }
 
 class _LoginPageF10State extends State<LoginPageF10> {
-  bool disable = true;
-  String? email;
-  String? phone;
+  bool _disable = true;
+  String? _email;
+  String? _phone;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,7 +58,10 @@ class _LoginPageF10State extends State<LoginPageF10> {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: TextFormField(
-                    // initialValue: "+996 777 111 222",
+                    onChanged: (String? phone) {
+                      print('onChanged $phone');
+                      print(_phone);
+                    },
                     style: const TextStyle(
                       color: Color.fromARGB(255, 66, 98, 67),
                       fontSize: 20,
@@ -86,7 +89,8 @@ class _LoginPageF10State extends State<LoginPageF10> {
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: TextFormField(
                     onChanged: (String? email) {
-                      print(email);
+                      print('onChanged $email');
+                      print(_email);
                     },
                     initialValue: "example@gmail.com",
                     style: const TextStyle(
