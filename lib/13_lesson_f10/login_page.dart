@@ -92,7 +92,6 @@ class _LoginPageF10State extends State<LoginPageF10> {
                       print('onChanged $email');
                       print(_email);
                     },
-                    initialValue: "example@gmail.com",
                     style: const TextStyle(
                       color: Color.fromARGB(255, 66, 98, 67),
                       fontSize: 20,
