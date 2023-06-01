@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class LoginPageF10 extends StatelessWidget {
+class LoginPageF10 extends StatefulWidget {
   const LoginPageF10({Key? key}) : super(key: key);
 
+  @override
+  State<LoginPageF10> createState() => _LoginPageF10State();
+}
+
+class _LoginPageF10State extends State<LoginPageF10> {
+  bool disable = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
