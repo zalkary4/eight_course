@@ -9,15 +9,16 @@ class LoginPageF10 extends StatefulWidget {
 }
 
 class _LoginPageF10State extends State<LoginPageF10> {
-  bool isActive = true;
+  bool isActive = false;
   String? _email;
   String? _phone;
-  void activate() {
+  void activateRRR() {
     if (_phone != null && _email != null) {
       isActive = true;
     }
     print(_email);
     print(_phone);
+    setState(() {});
   }
 
   @override
@@ -68,7 +69,7 @@ class _LoginPageF10State extends State<LoginPageF10> {
                   child: TextFormField(
                     onChanged: (String? phone) {
                       phone = _phone;
-                      activate();
+                      activateRRR();
                     },
                     style: const TextStyle(
                       color: Color.fromARGB(255, 66, 98, 67),
@@ -98,7 +99,7 @@ class _LoginPageF10State extends State<LoginPageF10> {
                   child: TextFormField(
                     onChanged: (String? email) {
                       email = _email;
-                      activate();
+                      activateRRR();
                     },
                     style: const TextStyle(
                       color: Color.fromARGB(255, 66, 98, 67),
