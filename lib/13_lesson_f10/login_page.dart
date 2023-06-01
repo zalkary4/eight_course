@@ -66,6 +66,7 @@ class _LoginPageF10State extends State<LoginPageF10> {
                   child: TextFormField(
                     onChanged: (String? phone) {
                       phone = _phone;
+                      activate();
                     },
                     style: const TextStyle(
                       color: Color.fromARGB(255, 66, 98, 67),
@@ -95,6 +96,7 @@ class _LoginPageF10State extends State<LoginPageF10> {
                   child: TextFormField(
                     onChanged: (String? email) {
                       email = _email;
+                      activate();
                     },
                     style: const TextStyle(
                       color: Color.fromARGB(255, 66, 98, 67),
