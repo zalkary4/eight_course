@@ -76,6 +76,8 @@ class _LoginPageF10State extends State<LoginPageF10> {
                 ),
               ),
               const SizedBox(height: 10),
+
+              /// decor
               SizedBox(
                 height: 50,
                 child: Padding(
@@ -102,7 +104,7 @@ class _LoginPageF10State extends State<LoginPageF10> {
               ),
               const SizedBox(height: 10),
               OutlinedButton(
-                onPressed: () {},
+                onPressed: null,
                 child: Text(
                   'Sign In',
                   style: TextStyle(fontSize: 24, color: Colors.white),
