@@ -16,6 +16,8 @@ class _LoginPageF10State extends State<LoginPageF10> {
     if (_phone != null && _email != null) {
       isActive = true;
     }
+    print(_email);
+    print(_phone);
   }
 
   @override
@@ -118,7 +120,7 @@ class _LoginPageF10State extends State<LoginPageF10> {
               ),
               const SizedBox(height: 10),
               ElevatedButton(
-                onPressed: null,
+                onPressed: isActive ? () {} : null,
                 child: Text(
                   'Sign In',
                   style: TextStyle(fontSize: 24, color: Colors.white),
