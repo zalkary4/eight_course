@@ -1,3 +1,4 @@
+import 'package:eight_course/13_lesson_f10/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -121,7 +122,16 @@ class _LoginPageF10State extends State<LoginPageF10> {
               ),
               const SizedBox(height: 10),
               ElevatedButton(
-                onPressed: isActive ? () {} : null,
+                onPressed: isActive
+                    ? () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => HomePageF10(),
+                          ),
+                        );
+                      }
+                    : null,
                 child: Text(
                   'Sign In',
                   style: TextStyle(fontSize: 24, color: Colors.white),
