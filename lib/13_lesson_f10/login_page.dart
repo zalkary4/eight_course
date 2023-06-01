@@ -58,7 +58,7 @@ class LoginPageF10 extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: TextFormField(
-                    initialValue: "+996 777 111 222",
+                    // initialValue: "+996 777 111 222",
                     style: const TextStyle(
                       color: Color.fromARGB(255, 66, 98, 67),
                       fontSize: 20,
