@@ -13,13 +13,14 @@ class _LoginPageF10State extends State<LoginPageF10> {
   bool isActive = false;
   String? _email;
   String? _phone;
-  void activateRRR() {
+
+  void _activate() {
     if (_phone != null && _email != null) {
       if (_phone!.isEmpty || _email!.isEmpty) {
         isActive = false;
+      } else {
+        isActive = true;
       }
-    } else {
-      isActive = true;
     }
     print(_email);
     print(_phone);
@@ -74,7 +75,7 @@ class _LoginPageF10State extends State<LoginPageF10> {
                   child: TextFormField(
                     onChanged: (String? phone) {
                       _phone = phone;
-                      activateRRR();
+                      _activate();
                     },
                     style: const TextStyle(
                       color: Color.fromARGB(255, 66, 98, 67),
@@ -104,7 +105,7 @@ class _LoginPageF10State extends State<LoginPageF10> {
                   child: TextFormField(
                     onChanged: (String? email) {
                       _email = email;
-                      activateRRR();
+                      _activate();
                     },
                     style: const TextStyle(
                       color: Color.fromARGB(255, 66, 98, 67),

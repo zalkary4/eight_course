@@ -6,11 +6,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      // theme: ThemeData(primarySwatch: Colors.orange),
-      home: const LoginPageF10(),
+      home: LoginPageF10(),
     );
   }
 }
