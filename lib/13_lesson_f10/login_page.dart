@@ -64,6 +64,7 @@ class LoginPageF10 extends StatelessWidget {
                       fontSize: 20,
                     ),
                     decoration: const InputDecoration(
+                      hintText: 'phone number',
                       prefixIcon: Icon(
                         Icons.phone,
                         color: Color.fromARGB(255, 66, 98, 67),
@@ -88,6 +89,7 @@ class LoginPageF10 extends StatelessWidget {
                       fontSize: 20,
                     ),
                     decoration: const InputDecoration(
+                      hintText: 'e-mail address',
                       prefixIcon: Icon(
                         Icons.mail,
                         color: Color.fromARGB(255, 66, 98, 67),
