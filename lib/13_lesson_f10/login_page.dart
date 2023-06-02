@@ -55,7 +55,7 @@ class _LoginPageF10State extends State<LoginPageF10> {
                 ),
               ),
               Text(
-                'Flutter DEVELOPER',
+                'Flutter deleveloper',
                 style: GoogleFonts.dosis(
                     color: const Color.fromARGB(255, 197, 212, 205),
                     fontSize: 20,
