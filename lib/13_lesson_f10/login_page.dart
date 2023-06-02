@@ -82,7 +82,7 @@ class _LoginPageF10State extends State<LoginPageF10> {
                       fontSize: 20,
                     ),
                     decoration: const InputDecoration(
-                      hintText: 'phone number',
+                      hintText: 'Phone number',
                       prefixIcon: Icon(
                         Icons.phone,
                         color: Color.fromARGB(255, 66, 98, 67),
