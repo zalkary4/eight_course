@@ -62,7 +62,7 @@ class _LoginPageF10State extends State<LoginPageF10> {
                     fontWeight: FontWeight.w400),
               ),
               const Divider(
-                thickness: 1,
+                thickness: 2,
                 color: Color.fromARGB(255, 197, 212, 205),
                 indent: 185,
                 endIndent: 185,
