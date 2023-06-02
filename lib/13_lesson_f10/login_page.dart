@@ -33,7 +33,7 @@ class _LoginPageF10State extends State<LoginPageF10> {
       backgroundColor: const Color.fromARGB(255, 66, 98, 67),
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: const Text('Тапшырма - 04',
+        title: const Text('Task - 04',
             style: TextStyle(color: Colors.black, fontWeight: FontWeight.w800)),
         centerTitle: true,
       ),
