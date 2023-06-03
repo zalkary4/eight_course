@@ -35,7 +35,7 @@ class UserDetailPage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(15.0),
             child: Text(user.tajryybaJolu),
           ),
         ],
