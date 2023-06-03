@@ -13,7 +13,7 @@ class CounterPageLesson99 extends StatelessWidget {
   Widget build(BuildContext context) {
     // log(san.toString());
     return Scaffold(
-      appBar: AppBar(title: const Text('Counterr 2')),
+      appBar: AppBar(title: const Text('Counter 2')),
       body: Center(
         child: Text('$san', style: const TextStyle(fontSize: 70)),
       ),
