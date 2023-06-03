@@ -15,7 +15,7 @@ class CounterPageLesson99 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Counter 2')),
       body: Center(
-        child: Text('$san', style: const TextStyle(fontSize: 60)),
+        child: Text('$san', style: const TextStyle(fontSize: 65)),
       ),
     );
   }
