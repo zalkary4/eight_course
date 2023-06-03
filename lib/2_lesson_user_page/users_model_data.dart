@@ -33,7 +33,7 @@ final List<User> users = [
     tajryybaJolu: constText,
   ),
   User(
-    atyJonu: 'Aydar',
+    atyJonu: 'Aidar',
     kesibi: 'Flutter developer',
     jash: 20,
     profileSurot: 'FlutterLogo(size: 40)',
