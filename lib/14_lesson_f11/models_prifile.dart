@@ -107,3 +107,4 @@ final talant = Student(
   gender: 2,
   marriage: true,
 );
+
