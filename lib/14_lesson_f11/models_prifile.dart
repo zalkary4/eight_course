@@ -1,4 +1,5 @@
 class Student {
+  final int id;
   final String name;
   final String lastName;
   final String email;
@@ -11,6 +12,7 @@ class Student {
   bool? marriage;
 
   Student({
+    required this.id,
     required this.name,
     required this.lastName,
     required this.email,
