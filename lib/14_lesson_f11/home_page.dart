@@ -3,8 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class HomePageF10 extends StatelessWidget {
-  const HomePageF10({Key? key}) : super(key: key);
+class HomePageF11 extends StatelessWidget {
+  const HomePageF11({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

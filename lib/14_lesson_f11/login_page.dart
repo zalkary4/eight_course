@@ -2,14 +2,14 @@ import 'package:eight_course/13_lesson_f10/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class LoginPageF10 extends StatefulWidget {
-  const LoginPageF10({Key? key}) : super(key: key);
+class LoginPageF11 extends StatefulWidget {
+  const LoginPageF11({Key? key}) : super(key: key);
 
   @override
-  State<LoginPageF10> createState() => _LoginPageF10State();
+  State<LoginPageF11> createState() => _LoginPageF11State();
 }
 
-class _LoginPageF10State extends State<LoginPageF10> {
+class _LoginPageF11State extends State<LoginPageF11> {
   bool isActive = false;
   String? _email;
   String? _phone;
