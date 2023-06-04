@@ -1,4 +1,5 @@
 import 'package:eight_course/13_lesson_f10/home_page.dart';
+import 'package:eight_course/14_lesson_f11/models_prifile.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -25,6 +26,12 @@ class _LoginPageF11State extends State<LoginPageF11> {
     print(_email);
     print(_phone);
     setState(() {});
+  }
+
+  void controlEmailphone(String phone, String email){
+    for (final student in students){
+      if (phone)==RenderObjectToWidgetElement._rootChildSlot
+    }
   }
 
   @override
