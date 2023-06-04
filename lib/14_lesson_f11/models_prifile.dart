@@ -9,4 +9,17 @@ class Student {
   int? age;
   String? adress;
   bool? marriage;
+
+  Student({
+    required this.name,
+    required this.lastName,
+    required this.email,
+    this.gender,
+    this.jeri,
+    required this.group,
+    required this.phone,
+    this.age,
+    this.adress,
+    this.marriage,
+  });
 }
