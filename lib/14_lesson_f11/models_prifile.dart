@@ -16,12 +16,16 @@ class Student {
     required this.name,
     required this.lastName,
     required this.email,
+
+    /// gender is 1 female, 2=male;
     this.gender,
     this.jeri,
     required this.group,
     required this.phone,
     this.age,
     this.adress,
+
+    /// marriage is true = Jenat, false=Nejenat
     this.marriage,
   });
 }
