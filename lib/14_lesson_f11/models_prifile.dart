@@ -96,3 +96,14 @@ final bakyt = Student(
   phone: '+996705365239',
   marriage: true,
 );
+
+final talant = Student(
+  id: 7,
+  name: 'Talant',
+  lastName: 'Kazyev',
+  email: 'talant@gmail.com',
+  group: 8,
+  phone: '+996772404771',
+  gender: 2,
+  marriage: true,
+);
