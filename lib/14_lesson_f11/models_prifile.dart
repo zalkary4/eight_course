@@ -52,13 +52,47 @@ final meerim = Student(
   gender: 1,
 );
 
-final meerim = Student(
-  id: 2,
-  name: 'Meerim',
-  lastName: 'Akmatova',
-  email: 'meerim@gmail.com',
+final adilbek = Student(
+  id: 3,
+  name: 'Adilbek',
+  lastName: 'Kurmanbek uulu',
+  email: 'adilbek@gmail.com',
   group: 8,
-  phone: '+996774856888',
-  jeri: 'Issyk Kol',
-  gender: 1,
+  phone: '+996999291210',
+  jeri: 'Jumgal',
+  gender: 2,
+  marriage: true,
+);
+
+final altynbek = Student(
+  id: 4,
+  name: 'Altynbek',
+  lastName: 'Bekmoldo uulu',
+  email: 'altynbek@gmail.com',
+  group: 8,
+  phone: '+9261272790',
+  jeri: 'Aksy',
+  gender: 2,
+  marriage: true,
+);
+
+final arsen = Student(
+  id: 5,
+  name: 'Arsen',
+  lastName: 'Ardakbek uulu',
+  email: 'arsen@gmail.com',
+  group: 8,
+  phone: '+996999771661',
+  gender: 2,
+  marriage: false,
+);
+
+final bakyt = Student(
+  id: 6,
+  name: 'Bakyt',
+  lastName: 'Kurmanaliev',
+  email: 'bakyt@gmail.com',
+  group: 8,
+  phone: '+996705365239',
+  marriage: true,
 );
