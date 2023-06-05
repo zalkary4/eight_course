@@ -1,11 +1,7 @@
-import 'dart:developer';
-
 import 'package:eight_course/test/home_page_test.dart';
 import 'package:eight_course/test/mor_prof_test.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-/// !: men seni (ozgormonu) koldongongo chein maani bergen bolom
 
 final students = <Student>[
   mayrambek,
@@ -18,11 +14,6 @@ final students = <Student>[
 ];
 const snackBar = SnackBar(content: Text('Kechiresiz Login je Phone kata'));
 
-/// локальный фотолор менен иштөө
-/// Assets
-/// Kadam 1: Project papkaga assets dgen papka koshobuz
-/// assets papkasyna images degen papka achabyz
-/// Package: Пакет
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -36,7 +27,6 @@ class _LoginPageState extends State<LoginPage> {
   String? _phone;
 
   void _activate() {
-    log(_phone.toString());
     if (_phone != null && _email != null) {
       if (_phone!.isEmpty || _email!.isEmpty) {
         isActive = false;
@@ -44,9 +34,6 @@ class _LoginPageState extends State<LoginPage> {
         isActive = true;
       }
     }
-    // log(_phone.toString());
-    // log(_email.toString());
-    // log(isActive.toString());
     setState(() {});
   }
 
@@ -58,7 +45,7 @@ class _LoginPageState extends State<LoginPage> {
         break;
       } else {
         ScaffoldMessenger.of(context).showSnackBar(snackBar);
-        continue;
+        // continue;
       }
     }
   }
@@ -89,11 +76,6 @@ class _LoginPageState extends State<LoginPage> {
                     backgroundColor: Colors.amber,
                     backgroundImage:
                         AssetImage('assets/images/turat_alybaev.jpg'),
-                    // child: Image.asset(
-                    //   'assets/images/turat_alybaev.jpg',
-                    //   width: 80,
-                    //   height: 80,
-                    // ),
                   ),
                   const SizedBox(width: 30),
                   DecoratedBox(
@@ -146,7 +128,6 @@ class _LoginPageState extends State<LoginPage> {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: TextFormField(
-                    // initialValue: '+996 557 106 446',
                     style: const TextStyle(
                       color: Color.fromARGB(255, 6, 102, 80),
                       fontSize: 20,
@@ -232,5 +213,3 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-
-/// isActive ? () {} : null,
