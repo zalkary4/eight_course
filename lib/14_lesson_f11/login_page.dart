@@ -47,6 +47,7 @@ class _LoginPageF11State extends State<LoginPageF11> {
         break;
       } else {
         ScaffoldMessenger.of(context).showSnackBar(snackBar);
+        break;
       }
     }
   }
