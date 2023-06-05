@@ -3,6 +3,16 @@ import 'package:eight_course/14_lesson_f11/models_prifile.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+final students = <Student>[
+  mayrambek,
+  meerim,
+  adilbek,
+  altynbek,
+  arsen,
+  bakyt,
+  talant
+];
+
 class LoginPageF11 extends StatefulWidget {
   const LoginPageF11({Key? key}) : super(key: key);
 
@@ -28,9 +38,14 @@ class _LoginPageF11State extends State<LoginPageF11> {
     setState(() {});
   }
 
-  void controlEmailphone(String phone, String email){
-    for (final student in students){
-      if (phone)==RenderObjectToWidgetElement._rootChildSlot
+  void controlEmailphone(String phone, String email) {
+    for (final student in students) {
+      if (phone == student.phone && email == student.email) {
+        print('Welcome ${student.name}');
+        break;
+      } else {
+        print('Wrong');
+      }
     }
   }
 
