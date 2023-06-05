@@ -43,7 +43,7 @@ class _LoginPageF11State extends State<LoginPageF11> {
     for (final student in students) {
       if (phone == student.phone && email == student.email) {
         Navigator.push(context,
-            MaterialPageRoute(builder: (context) => const HomePageF11()));
+            MaterialPageRoute(builder: (context) => HomePageF11(student)));
         break;
       } else {
         ScaffoldMessenger.of(context).showSnackBar(snackBar);

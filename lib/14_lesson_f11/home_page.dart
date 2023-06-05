@@ -1,10 +1,12 @@
+import 'package:eight_course/14_lesson_f11/models_prifile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomePageF11 extends StatelessWidget {
-  const HomePageF11({Key? key}) : super(key: key);
+  const HomePageF11(this.student, {Key? key}) : super(key: key);
+  final Student student;
 
   @override
   Widget build(BuildContext context) {
@@ -21,9 +23,9 @@ class HomePageF11 extends StatelessWidget {
         shadowColor: Colors.black,
         elevation: 25.0,
         backgroundColor: const Color(0xffFEC106),
-        title: const Text(
-          'Home work - 4',
-          style: TextStyle(
+        title: Text(
+          student.name,
+          style: const TextStyle(
             color: Colors.black,
             fontSize: 24,
           ),
