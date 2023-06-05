@@ -1,4 +1,4 @@
-import 'package:eight_course/13_lesson_f10/home_page.dart';
+import 'package:eight_course/14_lesson_f11/home_page.dart';
 import 'package:eight_course/14_lesson_f11/models_prifile.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -12,6 +12,7 @@ final students = <Student>[
   bakyt,
   talant
 ];
+const snackBar = SnackBar(content: Text('Wow? something is wrong'));
 
 class LoginPageF11 extends StatefulWidget {
   const LoginPageF11({Key? key}) : super(key: key);
@@ -41,10 +42,11 @@ class _LoginPageF11State extends State<LoginPageF11> {
   void controlEmailphone(String phone, String email) {
     for (final student in students) {
       if (phone == student.phone && email == student.email) {
-        print('Welcome ${student.name}');
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => const HomePageF11()));
         break;
       } else {
-        print('Wrong');
+        ScaffoldMessenger.of(context).showSnackBar(snackBar);
       }
     }
   }
@@ -151,12 +153,9 @@ class _LoginPageF11State extends State<LoginPageF11> {
               ElevatedButton(
                 onPressed: isActive
                     ? () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => HomePageF10(),
-                          ),
-                        );
+                        if (_phone != null && _email != null) {
+                          controlEmailphone(_phone!, _email!);
+                        }
                       }
                     : null,
                 child: Text(
