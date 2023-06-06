@@ -1,11 +1,11 @@
-import 'package:eight_course/14_lesson_f11/models_prifile.dart';
+import 'package:eight_course/15_lesson_f12/models_prifile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class HomePageF11 extends StatelessWidget {
-  const HomePageF11(this.student, {Key? key}) : super(key: key);
+class HomePageF12 extends StatelessWidget {
+  const HomePageF12(this.student, {Key? key}) : super(key: key);
   final Student student;
 
   @override

@@ -1,5 +1,7 @@
-import 'package:eight_course/14_lesson_f11/home_page.dart';
-import 'package:eight_course/14_lesson_f11/models_prifile.dart';
+import 'dart:developer';
+
+import 'package:eight_course/15_lesson_f12/models_prifile.dart';
+import 'package:eight_course/15_lesson_f12/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -14,14 +16,14 @@ final students = <Student>[
 ];
 const snackBar = SnackBar(content: Text('Wow? something is wrong'));
 
-class LoginPageF11 extends StatefulWidget {
-  const LoginPageF11({Key? key}) : super(key: key);
+class LoginPageF12 extends StatefulWidget {
+  const LoginPageF12({Key? key}) : super(key: key);
 
   @override
-  State<LoginPageF11> createState() => _LoginPageF11State();
+  State<LoginPageF12> createState() => _LoginPageF12State();
 }
 
-class _LoginPageF11State extends State<LoginPageF11> {
+class _LoginPageF12State extends State<LoginPageF12> {
   bool isActive = false;
   String? _email;
   String? _phone;
@@ -37,15 +39,33 @@ class _LoginPageF11State extends State<LoginPageF11> {
     setState(() {});
   }
 
-  void controlEmailphone(String phone, String email) {
-    for (final student in students) {
-      if (phone == student.phone && email == student.email) {
-        Navigator.push(context,
-            MaterialPageRoute(builder: (context) => HomePageF11(student)));
-        break;
+  // void controlEmailphone(String phone, String email) {
+  //   int index = 0;
+  //   for (final student in students) {
+  //     if (phone == student.phone && email == student.email) {
+  //       Navigator.push(context,
+  //           MaterialPageRoute(builder: (context) => HomePageF12(student)));
+  //       break;
+  //     } else {
+  //       if (index == students.length) {
+  //         // ScaffoldMessenger.of(context).showSnackBar(snackBar);
+  //         print('rrrr');
+  //       } else {
+  //         continue;
+  //       }
+  //     }
+  //   }
+  // }
+
+  void controlEmailPhone(String phone, String email) {
+    for (var i = 0; i < students.length; i++) {
+      if (phone == students[i].phone && email == students[i].email) {
+        print('Weolcome ${students[i].name}');
       } else {
-        ScaffoldMessenger.of(context).showSnackBar(snackBar);
-        // break;
+        if (i == students.length - 1) {
+          print('Wow, something is wrong');
+          break;
+        }
       }
     }
   }
@@ -154,7 +174,7 @@ class _LoginPageF11State extends State<LoginPageF11> {
                 onPressed: isActive
                     ? () {
                         if (_phone != null && _email != null) {
-                          controlEmailphone(_phone!, _email!);
+                          controlEmailPhone(_phone!, _email!);
                         }
                       }
                     : null,

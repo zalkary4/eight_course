@@ -34,9 +34,9 @@ final mayrambek = Student(
     id: 1,
     name: 'Mayrambek',
     lastName: 'Iskakov',
-    email: 'm@gmail.com',
+    email: 'mail',
     group: 8,
-    phone: '+996',
+    phone: '000',
     adress: 'Bishkek',
     marriage: true,
     jeri: 'Issyk Kol');
