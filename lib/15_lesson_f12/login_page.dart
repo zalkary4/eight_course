@@ -74,6 +74,7 @@ class _LoginPageF12State extends State<LoginPageF12> {
       if (phone == students[i].phone && email == students[i].email) {
         Navigator.push(context,
             MaterialPageRoute(builder: (context) => HomePageF12(students[i])));
+        break;
       } else {
         if (i == students.length - 1) {
           ScaffoldMessenger.of(context).showSnackBar(snackBar);
