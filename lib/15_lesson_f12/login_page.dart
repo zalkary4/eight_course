@@ -43,13 +43,12 @@ class _LoginPageF12State extends State<LoginPageF12> {
   //   int index = 0;
   //   for (final student in students) {
   //     if (phone == student.phone && email == student.email) {
-  //       Navigator.push(context,
-  //           MaterialPageRoute(builder: (context) => HomePageF12(student)));
+  // Navigator.push(context,
+  //     MaterialPageRoute(builder: (context) => HomePageF12(student)));
   //       break;
   //     } else {
   //       if (index == students.length) {
   //         // ScaffoldMessenger.of(context).showSnackBar(snackBar);
-  //         print('rrrr');
   //       } else {
   //         continue;
   //       }
@@ -57,13 +56,27 @@ class _LoginPageF12State extends State<LoginPageF12> {
   //   }
   // }
 
+  // void controlEmailPhone(String phone, String email) {
+  //   for (var i = 0; i < students.length; i++) {
+  //     if (phone == students[i].phone && email == students[i].email) {
+  //       print('Weolcome ${students[i].name}');
+  //     } else {
+  //       if (i == students.length - 1) {
+  //         print('Wow, something is wrong');
+  //         break;
+  //       }
+  //     }
+  //   }
+  // }
+
   void controlEmailPhone(String phone, String email) {
-    for (var i = 0; i < students.length; i++) {
+    for (int i = 0; i <= students.length; i++) {
       if (phone == students[i].phone && email == students[i].email) {
-        print('Weolcome ${students[i].name}');
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => HomePageF12(students[i])));
       } else {
         if (i == students.length - 1) {
-          print('Wow, something is wrong');
+          ScaffoldMessenger.of(context).showSnackBar(snackBar);
           break;
         }
       }
