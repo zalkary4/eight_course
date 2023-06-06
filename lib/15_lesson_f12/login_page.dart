@@ -14,7 +14,7 @@ final students = <Student>[
   bakyt,
   talant
 ];
-const snackBar = SnackBar(content: Text('Wow? something is wrong'));
+const snackBar = SnackBar(content: Text('Wow, something is wrong'));
 
 class LoginPageF12 extends StatefulWidget {
   const LoginPageF12({Key? key}) : super(key: key);
