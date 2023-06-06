@@ -34,9 +34,9 @@ final mayrambek = Student(
     id: 1,
     name: 'Mayrambek',
     lastName: 'Iskakov',
-    email: 'may@gmail.com',
+    email: 'm@gmail.com',
     group: 8,
-    phone: '+996502565732',
+    phone: '+996',
     adress: 'Bishkek',
     marriage: true,
     jeri: 'Issyk Kol');
@@ -107,4 +107,3 @@ final talant = Student(
   gender: 2,
   marriage: true,
 );
-
