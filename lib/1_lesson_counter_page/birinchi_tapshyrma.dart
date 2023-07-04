@@ -45,7 +45,8 @@ class _BirinchiTapshyrmaCounterPageState
             const SizedBox(height: 10),
             Card(
               child: Padding(
-                padding: EdgeInsets.symmetric(vertical: 16, horizontal: 70),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 16, horizontal: 70),
                 child: Text(
                   '$_counter',
                   style: const TextStyle(fontSize: 30, color: Colors.red),
