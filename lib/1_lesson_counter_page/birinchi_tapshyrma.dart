@@ -34,7 +34,7 @@ class _BirinchiTapshyrmaCounterPageState
       drawer: const Drawer(),
       appBar: AppBar(
         title: const Text('App Title'),
-        actions: [Icon(Icons.search)],
+        actions: const [Icon(Icons.search)],
       ),
       body: Center(
         child: Column(
