@@ -42,7 +42,7 @@ class _BirinchiTapshyrmaCounterPageState
             const SizedBox(height: 90),
             const FlutterLogo(size: 150),
             const Text('This is the first task'),
-            SizedBox(height: 10),
+            SizedBox(height: 15),
             Card(
               child: Padding(
                 padding: EdgeInsets.symmetric(vertical: 16, horizontal: 70),
