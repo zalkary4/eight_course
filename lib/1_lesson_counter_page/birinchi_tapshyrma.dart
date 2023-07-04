@@ -33,7 +33,7 @@ class _BirinchiTapshyrmaCounterPageState
     return Scaffold(
       drawer: const Drawer(),
       appBar: AppBar(
-        title: Text('App Title'),
+        title: const Text('App Title'),
         actions: [Icon(Icons.search)],
       ),
       body: Center(
